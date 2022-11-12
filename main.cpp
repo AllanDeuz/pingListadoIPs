@@ -32,7 +32,7 @@ int main()
         printf("Ip's del .txt correctamente extraidas\r");
         // mostrar el ultimo elemento del array
         largoArray = getLargoArray(ipCompletas);
-        printf("Cantidad de ip's contenidad en el .txt: %d \r", largoArray);
+        printf("Cantidad de ip's contenidas en el .txt: %d \r", largoArray);
         myfile.close();
     }
     else
