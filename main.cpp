@@ -29,15 +29,17 @@ int main()
             ipCompletas[acumulador] = line;
             acumulador++;
         }
-        printf("Filas del .txt correctamente extraidas\r");
+        printf("Ip's del .txt correctamente extraidas\r");
         // mostrar el ultimo elemento del array
         largoArray = getLargoArray(ipCompletas);
+        printf("Cantidad de ip's contenidad en el .txt: %d \r", largoArray);
         myfile.close();
     }
     else
     {
-        cout << "Unable to open file";
+        cout << "No se pudo abrir el archivo";
     }
+    printf("Ip's contenidas en el .txt:\r");
     mostrarArray(ipCompletas);
     for (int i = 0; i < largoArray; i++)
     {
@@ -81,6 +83,5 @@ int getLargoArray(string array[])
             break;
         }
     }
-    printf("Largo del array: %d \r", largo);
     return largo;
 }
